@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Exchange.Assets" xmlns:system="clr-namespace:System;assembly=mscorlib">
+    <FlowDirection x:Key="MainFlow">RightToLeft</FlowDirection>
+    <system:String x:Key="winLogin">ورود کاربر</system:String>
+    <system:String x:Key="txtUsernamePlaceHolder">لطفا نام کاربری را وارد نمایید</system:String>
+    <system:String x:Key="txtPasswordPlaceHolder">لطفا رمز ورود را وارد نمایید</system:String>
+    <system:String x:Key="winMain">سیستم مدیریت مالی</system:String>
+    <system:String x:Key="btnLogin">ورود</system:String>
+    <system:String x:Key="SideMenu.Trade">ثبت خرید و فروش</system:String>
+    <system:String x:Key="SideMenu.Trade.mnuBuy">خرید ارز</system:String>
+    <system:String x:Key="SideMenu.Trade.mnuSale">فروش ارز</system:String>
+    <system:String x:Key="SideMenu.Trade.ExchangeRate">ثبت نرخ تسعیر</system:String>
+    <FontFamily x:Key="CustomFont">Fonts\#BYekan+</FontFamily>
+    <FontFamily x:Key="IconFont">Fonts\#bank</FontFamily>
+</ResourceDictionary>

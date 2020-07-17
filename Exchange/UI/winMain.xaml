@@ -1,0 +1,86 @@
+﻿<hc:Window x:Class="Exchange.UI.winMain"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exchange.UI"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        mc:Ignorable="d" Height="450" Width="800" Topmost="True" Title="{DynamicResource winMain}" FontFamily="{DynamicResource CustomFont}" FlowDirection="{DynamicResource MainFlow}" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0
+                    
+                    " Grid.RowSpan="2">
+        <hc:SideMenu FontFamily="{DynamicResource  CustomFont}">
+            <hc:SideMenuItem Header="{DynamicResource SideMenu.Trade}">
+                <hc:SideMenuItem.Icon>
+                    <TextBlock Text="&#xe701;" />
+                </hc:SideMenuItem.Icon>
+                <hc:SideMenuItem Header="{DynamicResource SideMenu.Trade.mnuBuy}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf2cb;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="{DynamicResource SideMenu.Trade.mnuSale}">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock  Text="&#xf246;"/>
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem Header="{DynamicResource SideMenu.Trade.ExchangeRate}">
+                <hc:SideMenuItem.Icon>
+                    <Image  Width="24" Height="24"/>
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem Header="گزارشات سیستم">
+                <hc:SideMenuItem.Icon>
+                    <TextBlock Text="&#xf3ab;" />
+                </hc:SideMenuItem.Icon>
+            </hc:SideMenuItem>
+            <hc:SideMenuItem Header="اطلاعات پایه">
+                <hc:SideMenuItem.Icon>
+                    <TextBlock Text="&#xf3ab;" />
+                </hc:SideMenuItem.Icon>
+                <hc:SideMenuItem Header="بانک ها">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf3ab;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="شماره حسابها">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf3ab;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="همکاران">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf3ab;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="اشخاص">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf3ab;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+                <hc:SideMenuItem Header="واحدهای پولی">
+                    <hc:SideMenuItem.Icon>
+                        <TextBlock Text="&#xf3ab;" />
+                    </hc:SideMenuItem.Icon>
+                </hc:SideMenuItem>
+            </hc:SideMenuItem>
+        </hc:SideMenu>
+            <hc:Divider BorderBrush="AliceBlue" BorderThickness="1" Orientation="Vertical"/>
+        </StackPanel>
+        <Grid Grid.Row="0" Grid.ColumnSpan="2">
+            <hc:SplitButton Name="btnUserProfile" HorizontalAlignment="Right" Margin="5" >
+                <Image Source="TradeIcon.png"/>
+            </hc:SplitButton>
+        </Grid>
+    </Grid>
+</hc:Window>

@@ -1,0 +1,22 @@
+﻿<hc:Window x:Class="Exchange.winLogin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:local="clr-namespace:Exchange"
+        mc:Ignorable="d"
+        Title="{DynamicResource ResourceKey=winLogin}" FlowDirection="{DynamicResource MainFlow}" ShowNonClientArea="True" NonClientAreaBackground="Black" CloseButtonForeground="White" OtherButtonForeground="Black" NonClientAreaForeground="WhiteSmoke" SizeToContent="WidthAndHeight" FontFamily="{DynamicResource CustomFont}" FontSize="16">
+    <StackPanel>
+        <hc:TextBox Name="txtUserName"   Margin="10,5" hc:InfoElement.Placeholder="{DynamicResource txtUsernamePlaceHolder}" />
+        <hc:PasswordBox Name="txtPassword"  Margin="10,5" hc:InfoElement.Placeholder="{DynamicResource txtPasswordPlaceHolder}" />
+        <Grid>
+            <Button Style="{StaticResource ButtonPrimary}" Content="{DynamicResource btnLogin}" Margin="10,5,10,05" hc:IconElement.Geometry="{DynamicResource LoginImage}" HorizontalAlignment="Right"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" >
+                <Label Content="فا" FontSize="12" Margin="0" Background="Transparent" VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                <ToggleButton x:Name="btnChangeLanguage" Style="{StaticResource ToggleButtonSwitch}"  Height="20" Margin="0" Width="20"/>
+                <Label Content="En" FontSize="12" Margin="0" Background="Transparent"  VerticalAlignment="Center" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
+</hc:Window>
